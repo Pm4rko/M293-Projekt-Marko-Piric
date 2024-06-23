@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #14213D;
+    line-height: 1.5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 72px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #FCA311;
+}
+
+header {
+    background-color: #14213D;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    line-height: 1.5;
+    min-height: 369px;
+    border-top: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+header h1 {
+    font-size: 56px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+header p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    background-color: #fff;
+    width: 1312px;
+    height: 864px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 80px;
+}
+
+.text-content {
+    flex: 0 0 616px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-content h2 {
+    font-size: 40px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.text-content p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.image-content {
+    flex: 0 0 616px;
+    height: 640px;
+}
+
+.image-content img {
+    width: 616px;
+    height: 640px;
+    object-fit: cover;
+    border: 2px solid #FCA311;
+}
+
+.skills-main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-main h1 {
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    margin-top: 72px;
+    margin-bottom: 167px;
+}
+
+.skills-container {
+    max-width: 1312px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 130px;
+}
+
+.skill-info h2 {
+    font-size: 20px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    width: 165px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #14213D;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 15px;
+}
+
+.skill-progress {
+    height: 20px;
+    background-color: #FCA311;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    margin-left: 5px;
+}
+
+.skill-percentage {
+    font-size: 20px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    width: 165px;
+    text-align: right;
+}
+
+.sql-progress {
+    width: 90%;
+}
+
+.html-css-progress {
+    width: 75%;
+}
+
+.c-progress {
+    width: 70%;
+}
+
+.csharp-progress {
+    width: 65%;
+}
+
+.portfolio-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 1867.5px;
+}
+
+.intro {
+    text-align: center;
+    margin: 112px 0 80px;
+    max-width: 768px;
+}
+
+.intro h2 {
+    font-size: 48px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.intro p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1312px;
+    height: 1504px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.left-column {
+    width: 632px;
+    max-width: 1180px;
+}
+
+.right-column {
+    width: 632px;
+    max-width: 1504px;
+}
+
+.project {
+    border: 2px solid #FCA311;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.common-image {
+    width: 100%;
+    height: 356px;
+    object-fit: cover;
+}
+
+.umbau-image {
+    width: 100%;
+    height: 632px;
+    object-fit: cover;
+}
+
+.text-box {
+    background-color: #FFF;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.left-text-box {
+    height: 210px;
+}
+
+.right-text-box {
+    height: 234px;
+}
+
+.project-heading {
+    font-size: 24px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.project-text {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.contact-container {
+    background-color: #fff;
+    width: 1312px;
+    height: 716px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-text {
+    flex: 0 0 616px;
+    height: 492px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-text h2 {
+    font-size: 48px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.contact-text p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item span {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.form-content {
+    flex: 0 0 616px;
+    height: 492px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    border: 1px solid #FCA311;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input {
+    width: 616px;
+    height: 48px;
+}
+
+form textarea {
+    width: 616px;
+    height: 180px;
+}
+
+form button {
+    background-color: #FCA311;
+    color: #000;
+    border: none;
+    width: 99px;
+    height: 48px;
+    font-size: 16px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #14213D;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+.footer-logo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 72px;
+}
+
+.footer-divider {
+    border-top: 1px solid #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.footer-text {
+    margin-bottom: 20px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media (max-width: 1312px) {
+    footer {
+        bottom: 0;
+    }
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .text-content, .image-content {
+        flex: 1;
+        width: 100%;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .project {
+        width: calc(50% - 30px);
+        margin-bottom: 30px;
+    }
+
+    .common-image,
+    .umbau-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .text-box {
+        padding: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-text, .form-content {
+        width: 100%;
+        max-width: 616px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        bottom: 0;
+    }
+    nav {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .text-content h2,
+    .skills-main h1,
+    .intro h2,
+    .contact-text h2 {
+        font-size: 24px;
+    }
+
+    .text-content p,
+    .intro p,
+    .contact-text p {
+        font-size: 14px;
+    }
+
+    .content-container {
+        padding: 20px;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-main h1 {
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    .skills-container {
+        padding: 20px;
+    }
+
+    .skill {
+        margin-bottom: 80px;
+    }
+
+    .skill-bar {
+        margin: 0;
+    }
+
+    .sql-progress {
+        width: 85%;
+    }
+
+    .html-css-progress {
+        width: 70%;
+    }
+
+    .c-progress {
+        width: 65%;
+    }
+
+    .csharp-progress {
+        width: 60%;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .project {
+        width: calc(50% - 20px);
+        max-width: 100%;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+
+    .common-image {
+        height: 280px;
+    }
+
+    .umbau-image {
+        height: 504px;
+    }
+
+    .text-box {
+        padding: 10px;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        bottom: 0;
+    }  
+    .navbar-links a {
+        padding: 5px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .text-content h2,
+    .skills-main h1,
+    .intro h2,
+    .contact-text h2 {
+        font-size: 20px;
+    }
+
+    .text-content p,
+    .intro p,
+    .contact-text p {
+        font-size: 12px;
+    }
+
+    .content-container {
+        padding: 10px;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-main h1 {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .skills-container {
+        padding: 10px;
+    }
+
+    .skill {
+        margin-bottom: 60px;
+    }
+
+    .sql-progress {
+        width: 80%;
+    }
+
+    .html-css-progress {
+        width: 65%;
+    }
+
+    .c-progress {
+        width: 60%;
+    }
+
+    .csharp-progress {
+        width: 55%;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 10px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: calc(100% - 20px);
+        margin-bottom: 40px;
+    }
+
+    .common-image {
+        height: 240px;
+    }
+
+    .umbau-image {
+        height: 432px;
+    }
+
+    .text-box {
+        padding: 10px;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+}   
